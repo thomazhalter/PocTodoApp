@@ -5,10 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -16,10 +16,10 @@
     "@angular/cdk": "~9.2.0",
     "@angular/common": "~9.1.0",
     "@angular/compiler": "~9.1.0",
+    "@angular/compiler-cli": "~9.1.0",
     "@angular/core": "~9.1.0",
     "@angular/flex-layout": "^9.0.0-beta.29",
     "@angular/forms": "~9.1.0",
-    "@angular/google-maps": "^9.2.0",
     "@angular/material": "^9.2.0",
     "@angular/platform-browser": "~9.1.0",
     "@angular/platform-browser-dynamic": "~9.1.0",
@@ -40,5 +40,9 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.7.5"
+  },
+  "engines": {
+    "node": "12.11.1",
+    "npm": "6.11.3"
   }
 }
