@@ -2,7 +2,7 @@
 
 POC desenvolvida com o Angular 9 usando SCSS, usando Angular Material.
 <br />
-Heroku:  
+Heroku: https://poctodoapp.herokuapp.com/
 
 <br />
 -> A lógica do app e alguns pontos visuais foram utilizados de acordo com o curso 7181 do André Baltieri - do Balta.io
