@@ -1,24 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
-body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    text-align: center;
-    background: #3023ae;
-    background: -moz-linear-gradient(60deg, #3023ae 0%, #c86dd7 100%);
-    background: -webkit-linear-gradient(60deg, #3023ae 0%, #c86dd7 100%);
-    background: linear-gradient(60deg, #3023ae 0%, #c86dd7 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3023ae', endColorstr='#c86dd7', GradientType=1);
-  }
-  
-  button {
+button {
     cursor: pointer;
-  }
+}
   
-  ul {
+ul {
     text-align: left;
     margin: 10px;
     padding: 10px;
@@ -28,42 +12,42 @@ body {
     -webkit-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
     -moz-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
     box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
-  }
+}
   
-  li {
+li {
     padding: 15px;
     margin: 10px;
     font-size: 1em;
     font-style: italic;
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-  }
+}
   
-  li>button {
+li>button {
     border: none;
     background-color: #fff;
     font-size: 1em;
     float: right;
     opacity: 0.6;
     transition: opacity 1s;
-  }
+}
   
-  li>button:hover {
+li>button:hover {
     opacity: 1;
     transition: opacity 1s;
-  }
+}
   
-  .title {
+.title {
     font-family: 'Dancing Script', cursive;
     color: #fff;
     font-size: 5em;
     text-shadow: 3px 5px #000;
-  }
+}
   
-  .text-center {
+.text-center {
     text-align: center;
-  }
+}
   
-  .button {
+.button {
     background-color: #000;
     border: none;
     padding: 20px;
@@ -73,9 +57,9 @@ body {
     font-weight: 100;
     padding-left: 50px;
     padding-right: 50px;
-  }
+}
   
-  #modal {
+#modal {
     text-align: left;
     margin: 10px;
     padding: 10px;
@@ -85,32 +69,42 @@ body {
     -webkit-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
     -moz-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
     box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
-  }
+}
   
-  #modal>h1 {
+#modal>h1 {
     font-weight: 300;
-  }
+}
   
-  input {
+input {
     width: 100%;
     line-height: 50px;
     text-indent: 10px;
     font-size: 1.2em;
-  }
+}
   
-  .danger {
-    background-color: #ff0000;
-    color: #fff;
+.danger {
+    color: #ff0000;
     font-weight: bold;
-    padding: 5px;
-    margin-top: 10px;
-  }
-
-.card {
-  width: 100%;
+    padding: 5px;    
 }
 
-.full-width {
-  width: 100%;
+.middle {
+    vertical-align: middle;
 }
-  
+
+.span-middle {
+    padding-left: 15px;
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+.middle-inside-box {
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.span-middle-inside-box {
+    padding-left: 10px;
+    vertical-align: middle;
+    font-size: 20px;
+}

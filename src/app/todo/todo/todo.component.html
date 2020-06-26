@@ -1,0 +1,39 @@
+<h1 class="title animated jackInTheBox">Lista de Tarefas</h1>
+<ul class="animated flipInX" *ngIf="mode=='list'">
+  <p class="text-center" *ngIf="todos.length==0"><small>Você não tem nenhuma tarefa hoje!</small></p>
+  <li *ngFor="let todo of todos">
+    {{ todo.title }}
+    <button (click)="remove(todo)"><mat-icon class="sidenav-icon">delete</mat-icon></button>
+    <button *ngIf="!todo.done" (click)="markAsDone(todo)"><mat-icon class="sidenav-icon">check_circle_outline</mat-icon></button>
+    <button *ngIf="todo.done" (click)="markAsUndone(todo)"><mat-icon class="sidenav-icon">refresh</mat-icon></button>
+  </li>
+</ul>
+
+<div id="modal" *ngIf="mode=='add'" class="animated flipInX">
+  <form [formGroup]="form">
+
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>Nova Tarefa</mat-label>
+        <input matInput type="text" placeholder="Título da Tarefa" maxlength="60" formControlName="title">        
+        <mat-hint class="danger" *ngIf="form.controls.title.invalid && !form.controls.title.pristine">
+            Este campo deve conter entre 3 e 60 caracteres<br>
+        </mat-hint>
+    </mat-form-field>
+
+    <p class="text-center">
+        <button [disabled]="form.invalid" (click)="add()" class="button"> 
+            <mat-icon class="sidenav-icon middle-inside-box" style="font-size: 20px;">save</mat-icon>
+            <span class="span-middle-inside-box" style="font-size: 20px;">Salvar</span>
+        </button>
+    </p>
+  </form>
+</div>
+
+<button class="add-button animated fadeInUp button" (click)="changeMode('add')" *ngIf="mode=='list'">
+    <mat-icon class="sidenav-icon middle">add</mat-icon>
+    <span class="span-middle">Nova Tarefa</span>
+</button>
+<button class="add-button animated fadeInUp button" (click)="changeMode('list')" *ngIf="mode=='add'">
+    <mat-icon class="sidenav-icon middle">cancel</mat-icon>
+    <span class="span-middle">Cancelar</span>
+</button>
