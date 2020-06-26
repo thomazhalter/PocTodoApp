@@ -1,7 +1,8 @@
 # PocTodoApp
 
 POC desenvolvida com o Angular 9 usando SCSS, usando Angular Material.
-Heroku: 
+<br />
+Heroku:  
 
 <br />
 -> A lógica do app e alguns pontos visuais foram utilizados de acordo com o curso 7181 do André Baltieri - do Balta.io
@@ -18,4 +19,4 @@ Execute o comando NG Serve -O para executar o app ja abrindo no navegador.
 
 # Salvando as Tarefas
 
-As tarefas sendo salvas no LocalStorage do navegado.
+As tarefas estão sendo salvas no LocalStorage do navegador.
